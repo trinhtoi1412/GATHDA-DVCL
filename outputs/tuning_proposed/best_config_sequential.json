@@ -1,0 +1,9 @@
+{
+  "k_similarity": 35,
+  "contrastive_weight": 0.12,
+  "dual_view_weight": 0.22,
+  "best_mean_aupr": 0.9926986105750524,
+  "best_mean_auc": 0.9945668209389614,
+  "planned_cases": 9,
+  "executed_cases": 9
+}

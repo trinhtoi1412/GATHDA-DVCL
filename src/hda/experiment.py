@@ -18,6 +18,7 @@ from sklearn.metrics import (
     roc_curve,
 )
 from sklearn.model_selection import KFold, train_test_split
+from sympy import false
 
 from .config import ExperimentConfig
 from .data import (
@@ -75,8 +76,10 @@ def train_single_fold(
 
     model = GATMDAScalable(n_herb, n_dis, cfg).to(device)
     opt = torch.optim.Adam(model.parameters(), lr=cfg.learning_rate, weight_decay=cfg.weight_decay)
-    amp_enabled = bool(cfg.use_amp and device.type == "cuda")
-    scaler = torch.amp.GradScaler("cuda", enabled=amp_enabled)
+    amp_enabled = false
+    scaler = None
+
+    # scaler = torch.cuda.amp.GradScaler(enabled=amp_enabled)
 
     single_edge_index, single_edge_weight = build_edge_index(
         train_R,

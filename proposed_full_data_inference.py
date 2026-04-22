@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import torch
 import torch.nn.functional as F
+from torch_geometric.nn.aggr import scaler
 
 from src.hda.config import ExperimentConfig
 from src.hda.data import (
@@ -98,7 +99,9 @@ def main() -> None:
     model = GATMDAScalable(n_herb=n_herb, n_dis=n_dis, cfg=cfg).to(device)
     opt = torch.optim.Adam(model.parameters(), lr=cfg.learning_rate, weight_decay=cfg.weight_decay)
     amp_enabled = bool(cfg.use_amp and device.type == "cuda")
-    scaler = torch.amp.GradScaler("cuda", enabled=amp_enabled)
+    scaler = None
+
+    # scaler = torch.amp.GradScaler("cuda", enabled=amp_enabled)
 
     print("R shape =", R.shape)
     print("positive edges =", len(pos_idx))

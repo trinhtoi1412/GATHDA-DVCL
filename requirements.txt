@@ -1,10 +1,11 @@
 --index-url https://pypi.org/simple
---extra-index-url https://download.pytorch.org/whl/cu128
 
 numpy
 pandas
 scipy
 scikit-learn
 matplotlib
-torch==2.11.0+cu128
+seaborn
+
+torch==2.1.0
 torch-geometric

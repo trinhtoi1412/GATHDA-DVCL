@@ -1,0 +1,2 @@
+best_config_source,k_similarity,contrastive_weight,dual_view_weight,n_folds,max_epochs,batch_size,graph_pos_edge_cap,max_positive_edges
+D:\CODE\code_data_HDA\outputs\tuning_proposed\best_config_sequential.json,35,0.12,0.22,5,500,24576,300000,300000

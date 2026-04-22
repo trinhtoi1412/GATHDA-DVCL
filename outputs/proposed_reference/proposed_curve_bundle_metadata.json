@@ -1,0 +1,34 @@
+{
+  "best_config_source": "D:\\CODE\\code_data_HDA\\outputs\\tuning_proposed\\best_config_sequential.json",
+  "k_similarity": 35,
+  "contrastive_weight": 0.12,
+  "dual_view_weight": 0.22,
+  "n_folds": 5,
+  "curve_files": {
+    "curve_image_png": "D:\\CODE\\code_data_HDA\\outputs\\proposed_reference\\proposed_best_curves.png",
+    "curve_image_jpg": "D:\\CODE\\code_data_HDA\\outputs\\proposed_reference\\proposed_best_curves.jpg",
+    "predictions_all": "D:\\CODE\\code_data_HDA\\outputs\\proposed_reference\\proposed_predictions_all.npz",
+    "curve_arrays_per_fold": "D:\\CODE\\code_data_HDA\\outputs\\proposed_reference\\proposed_curve_arrays_per_fold.npz",
+    "curve_points_per_fold": "D:\\CODE\\code_data_HDA\\outputs\\proposed_reference\\proposed_curve_points_per_fold.csv",
+    "curve_points_mean": "D:\\CODE\\code_data_HDA\\outputs\\proposed_reference\\proposed_curve_points_mean.csv",
+    "fold_metrics": "D:\\CODE\\code_data_HDA\\outputs\\proposed_reference\\proposed_fold_metrics.csv",
+    "summary": "D:\\CODE\\code_data_HDA\\outputs\\proposed_reference\\proposed_summary.csv",
+    "used_params": "D:\\CODE\\code_data_HDA\\outputs\\proposed_reference\\proposed_used_params.csv"
+  },
+  "metric_mean": {
+    "acc": 0.9776926036653283,
+    "f1": 0.9779281110996202,
+    "precision": 0.9678511475778263,
+    "recall": 0.9882536907110915,
+    "aupr": 0.9937447532979806,
+    "auc": 0.9955310375412646
+  },
+  "metric_std": {
+    "acc": 0.0006816967502200933,
+    "f1": 0.0005549820186127809,
+    "precision": 0.005023357598269318,
+    "recall": 0.00435182256850768,
+    "aupr": 0.0011314926562838161,
+    "auc": 0.0006120025395108748
+  }
+}
