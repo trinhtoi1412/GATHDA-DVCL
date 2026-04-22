@@ -1,0 +1,135 @@
+Metadata-Version: 2.4
+Name: cuda-toolkit
+Version: 12.8.1
+Summary: CUDA Toolkit meta-package
+Project-URL: homepage, https://developer.nvidia.com/cuda-toolkit
+Project-URL: documentation, https://docs.nvidia.com/cuda/
+Author-email: NVIDIA Kitmaker Team <compute_installer@nvidia.com>
+Keywords: cuda,nvidia
+Classifier: Development Status :: 6 - Mature
+Classifier: Environment :: GPU
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Provides-Extra: all
+Requires-Dist: nvidia-cublas-cu12==12.8.4.1.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cuda-cccl-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cuda-cupti-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cuda-cuxxfilt-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cuda-nvcc-cu12==12.8.93.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cuda-nvrtc-cu12==12.8.93.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cuda-opencl-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cuda-profiler-api-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cuda-runtime-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cuda-sanitizer-api-cu12==12.8.93.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cufft-cu12==11.3.3.83.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cufile-cu12==1.13.1.3.*; (sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-curand-cu12==10.3.9.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cusolver-cu12==11.7.3.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-cusparse-cu12==12.5.8.93.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-npp-cu12==12.3.3.100.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-nvfatbin-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-nvjitlink-cu12==12.8.93.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-nvjpeg-cu12==12.3.5.92.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-nvml-dev-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Requires-Dist: nvidia-nvtx-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'all'
+Provides-Extra: cccl
+Requires-Dist: nvidia-cuda-cccl-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'cccl'
+Provides-Extra: cublas
+Requires-Dist: nvidia-cublas-cu12==12.8.4.1.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'cublas'
+Provides-Extra: cudart
+Requires-Dist: nvidia-cuda-runtime-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'cudart'
+Provides-Extra: cufft
+Requires-Dist: nvidia-cufft-cu12==11.3.3.83.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'cufft'
+Provides-Extra: cufile
+Requires-Dist: nvidia-cufile-cu12==1.13.1.3.*; (sys_platform == 'linux') and extra == 'cufile'
+Provides-Extra: cupti
+Requires-Dist: nvidia-cuda-cupti-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'cupti'
+Provides-Extra: curand
+Requires-Dist: nvidia-curand-cu12==10.3.9.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'curand'
+Provides-Extra: cusolver
+Requires-Dist: nvidia-cusolver-cu12==11.7.3.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'cusolver'
+Provides-Extra: cusparse
+Requires-Dist: nvidia-cusparse-cu12==12.5.8.93.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'cusparse'
+Provides-Extra: cuxxfilt
+Requires-Dist: nvidia-cuda-cuxxfilt-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'cuxxfilt'
+Provides-Extra: npp
+Requires-Dist: nvidia-npp-cu12==12.3.3.100.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'npp'
+Provides-Extra: nvcc
+Requires-Dist: nvidia-cuda-nvcc-cu12==12.8.93.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'nvcc'
+Provides-Extra: nvfatbin
+Requires-Dist: nvidia-nvfatbin-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'nvfatbin'
+Provides-Extra: nvjitlink
+Requires-Dist: nvidia-nvjitlink-cu12==12.8.93.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'nvjitlink'
+Provides-Extra: nvjpeg
+Requires-Dist: nvidia-nvjpeg-cu12==12.3.5.92.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'nvjpeg'
+Provides-Extra: nvml
+Requires-Dist: nvidia-nvml-dev-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'nvml'
+Provides-Extra: nvrtc
+Requires-Dist: nvidia-cuda-nvrtc-cu12==12.8.93.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'nvrtc'
+Provides-Extra: nvtx
+Requires-Dist: nvidia-nvtx-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'nvtx'
+Provides-Extra: opencl
+Requires-Dist: nvidia-cuda-opencl-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'opencl'
+Provides-Extra: profiler
+Requires-Dist: nvidia-cuda-profiler-api-cu12==12.8.90.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'profiler'
+Provides-Extra: sanitizer
+Requires-Dist: nvidia-cuda-sanitizer-api-cu12==12.8.93.*; (sys_platform == 'win32' or sys_platform == 'linux') and extra == 'sanitizer'
+Description-Content-Type: text/markdown
+
+# cuda-toolkit 12.8.1
+
+### [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
+
+> The NVIDIA CUDA Toolkit provides a development environment for creating high-performance, GPU-accelerated applications. With it, you can develop, optimize, and deploy your applications on GPU-accelerated embedded systems, desktop workstations, enterprise data centers, cloud-based platforms, and supercomputers. The toolkit includes GPU-accelerated libraries, debugging and optimization tools, a C/C++ compiler, and a runtime library.
+
+### `cuda-toolkit` package
+
+The `cuda-toolkit` package is a meta-package (a package that contains no software and only installs other packages) to install all or part of the NVIDIA CUDA Toolkit.
+
+For instructions on how to use the `cuda-toolkit` package, please refer to the [NVIDIA CUDA Toolkit documentation](https://docs.nvidia.com/cuda/) and follow the installation guide for your platform. A summary of usage is also available below.
+
+### Using the `cuda-toolkit` package
+
+The `cuda-toolkit` package uses package extras to install all or part of the CUDA Toolkit.
+Some examples of using the `cuda-toolkit` meta-package with extras:
+
+Install all of the CUDA Toolkit
+```
+pip install cuda-toolkit[all]
+```
+
+Install just the CUDA Runtime
+```
+pip install cuda-toolkit[cudart]
+```
+
+Install cuBLAS, cuSOLVER, and cuSPARSE
+```
+pip install cuda-toolkit[cublas,cusolver,cusparse]
+```
+
+### Available extras
+
+| Extra | Package | Version |
+|-------|---------|---------|
+| `all` | All packages below |  |
+| cccl | nvidia-cuda-cccl-cu12 | 12.8.90  |
+| cublas | nvidia-cublas-cu12 | 12.8.4.1  |
+| cudart | nvidia-cuda-runtime-cu12 | 12.8.90  |
+| cufft | nvidia-cufft-cu12 | 11.3.3.83  |
+| cufile | nvidia-cufile-cu12 | 1.13.1.3  |
+| cupti | nvidia-cuda-cupti-cu12 | 12.8.90  |
+| curand | nvidia-curand-cu12 | 10.3.9.90  |
+| cusolver | nvidia-cusolver-cu12 | 11.7.3.90  |
+| cusparse | nvidia-cusparse-cu12 | 12.5.8.93  |
+| cuxxfilt | nvidia-cuda-cuxxfilt-cu12 | 12.8.90  |
+| npp | nvidia-npp-cu12 | 12.3.3.100  |
+| nvcc | nvidia-cuda-nvcc-cu12 | 12.8.93  |
+| nvfatbin | nvidia-nvfatbin-cu12 | 12.8.90  |
+| nvjitlink | nvidia-nvjitlink-cu12 | 12.8.93  |
+| nvjpeg | nvidia-nvjpeg-cu12 | 12.3.5.92  |
+| nvml | nvidia-nvml-dev-cu12 | 12.8.90  |
+| nvrtc | nvidia-cuda-nvrtc-cu12 | 12.8.93  |
+| nvtx | nvidia-nvtx-cu12 | 12.8.90  |
+| opencl | nvidia-cuda-opencl-cu12 | 12.8.90  |
+| profiler | nvidia-cuda-profiler-api-cu12 | 12.8.90  |
+| sanitizer | nvidia-cuda-sanitizer-api-cu12 | 12.8.93  |

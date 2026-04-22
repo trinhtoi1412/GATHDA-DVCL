@@ -1,0 +1,12 @@
+{
+  "source": "iCAM-Net TCM",
+  "n_herbs": 1008,
+  "n_diseases": 10890,
+  "n_positive_edges": 2342544,
+  "stored_format": "raw csv/txt + processed sparse R + index csv",
+  "note_negative_edges": "Negative samples are preserved at data/raw/icam_net/H_D_TCM_neg.csv.",
+  "note_profiles": "Use data/raw/icam_net/H_C_TCM.csv and data/raw/icam_net/D_P_TCM.csv to build profiles on-the-fly for different methods.",
+  "matrix_files": {
+    "R_hd": "data/processed/R_hd.npz"
+  }
+}
