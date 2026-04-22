@@ -33,7 +33,8 @@ pip install -r requirements.txt
 - run_tuning_proposed.py (chạy tuning tham số cho cấu hình đề xuất)
 - proposed.py (chạy riêng cấu hình đề xuất)
 - proposed_full_data_inference.py (train cấu hình đề xuất trên toàn bộ data để phục vụ nghiên cứu điển hình)
-=> kết quả lưu trữ tại folder outputs
+
+KẾT QUẢ LƯU TRỮ TẠI FOLDER OUTPUTS
 
 ## 🧪 Thực nghiệm
 - 5-fold cross-validation  
@@ -46,5 +47,5 @@ pip install -r requirements.txt
 - F1-score  
 
 ## ⚠️ Lưu ý
-- Nếu dùng CPU → tắt AMP  
+- Nếu dùng CPU → tắt AMP (Nhánh desktop đã sửa để chạy CPU)
 - GPU sẽ giúp tăng tốc đáng kể  
